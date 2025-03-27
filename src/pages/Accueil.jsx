@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/css/Accueil.css";
-import imgAccueil from "../assets/img/imgAccueil.png";
 import Card from "../composant/Card";
+import data from "../json/data.json";
 
 const Accueil = React.FC = () => {
     return (
@@ -11,7 +11,13 @@ const Accueil = React.FC = () => {
             </div>
 
             <div className="accueil__annonce">
-                <Card/>
+                {data.map((annonce) => (
+                    <Card
+                        key={annonce.id}
+                        title={annonce.title}
+                        img={annonce.cover}
+                    />
+                ))}
             </div>
         </div>
     );

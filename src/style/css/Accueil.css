@@ -1,8 +1,13 @@
+.accueil {
+  /*Banner*/
+  /*Annonces*/
+}
 .accueil__container {
   height: 200px;
   border-radius: 25px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/img/imgAccueil.png);
   background-position: center;
+  background-repeat: no-repeat;
 }
 .accueil__container__title {
   display: flex;
@@ -10,4 +15,23 @@
   justify-content: center;
   height: 100%;
   color: white;
+}
+.accueil__annonce {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin: 20px auto;
+  padding: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .accueil__container {
+    padding: 20px;
+  }
+  .accueil__annonce {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
