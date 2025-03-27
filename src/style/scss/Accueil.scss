@@ -1,0 +1,17 @@
+.accueil {
+
+    &__container {
+        height: 200px;
+        border-radius: 25px;
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/img/imgAccueil.png);
+        background-position: center;
+
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: white;
+        }
+    }
+}
