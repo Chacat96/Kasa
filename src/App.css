@@ -1,42 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  height: 100%; /* Assurez-vous que le root prend toute la hauteur */
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #f1f1f1; /* Exemple de style pour le header */
+  padding: 1rem;
+}
+
+footer {
+  background-color: #f1f1f1; /* Exemple de style pour le footer */
+  padding: 1rem;
   text-align: center;
+  margin-top: auto; /* Permet au footer d'être en bas */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+main {
+  flex: 1; /* Permet à main de prendre tout l'espace disponible entre le header et le footer */
+  padding: 2rem;
 }
