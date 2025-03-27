@@ -1,0 +1,17 @@
+.card {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  cursor: pointer;
+}
+.card__title {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 50%;
+  color: white;
+  text-align: left;
+}

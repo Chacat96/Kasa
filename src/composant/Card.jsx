@@ -1,10 +1,11 @@
 import React from "react";
 import "../style/css/Card.css";
 
-const Card = React.FC = () => {
+
+const Card= React.FC = ({title, img}) => {
     return (
-        <div className="Card">
-            <h1>card</h1>
+        <div className="card" style={{ backgroundImage: `url(${img})` }}>
+            <p className="card__title">{title}</p>
         </div>
     );
 };
