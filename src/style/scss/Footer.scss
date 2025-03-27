@@ -1,0 +1,22 @@
+.footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+
+    &__logo-footer {
+        width: 120px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    &__copyright {
+        color: white;
+        text-align: center;
+    }
+}
+
