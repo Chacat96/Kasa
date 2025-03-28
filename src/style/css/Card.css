@@ -6,12 +6,22 @@
   background-position: center;
   padding: 20px;
   cursor: pointer;
+  filter: brightness(0.8);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  border-radius: 10px;
 }
 .card__title {
   display: flex;
+  position: relative;
   align-items: flex-end;
   height: 100%;
   width: 50%;
   color: white;
   text-align: left;
+  z-index: 1;
 }

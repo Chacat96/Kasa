@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../style/css/Accueil.css";
 import Card from "../composant/Card";
 import data from "../json/data.json";
 
 const Accueil = () => {
+    const navigate = useNavigate();
     return (
         <div className="accueil">
             <div className="accueil__container">
@@ -16,6 +18,7 @@ const Accueil = () => {
                         key={annonce.id}
                         title={annonce.title}
                         img={annonce.cover}
+                        onClick={() => navigate(`/annonce/${annonce.id}`)}
                     />
                 ))}
             </div>
