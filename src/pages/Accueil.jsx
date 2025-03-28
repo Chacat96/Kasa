@@ -3,7 +3,7 @@ import "../style/css/Accueil.css";
 import Card from "../composant/Card";
 import data from "../json/data.json";
 
-const Accueil = React.FC = () => {
+const Accueil = () => {
     return (
         <div className="accueil">
             <div className="accueil__container">

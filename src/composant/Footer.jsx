@@ -2,7 +2,7 @@ import React from "react";
 import logoWhite from "../assets/logo/logoWhite.png";
 import  "../style/css/Footer.css";
 
-const Footer = React.FC = () => {
+const Footer = () => {
     return (
        <div className="footer">
         <img src={logoWhite} alt="logo kasa" className="footer__logo-footer"/>

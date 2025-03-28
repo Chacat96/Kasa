@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import LOGO from "../assets/logo/LOGO.png";
 import  "../style/css/Header.css";
 
-const Header = React.FC = () => {
+const Header = () => {
     const [activePage, setActivePage] = useState(window.location.pathname);
 
     useEffect(() => {
