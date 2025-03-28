@@ -1,0 +1,22 @@
+.dropdown {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 330px;
+}
+.dropdown__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px 20px 10px 15px;
+  cursor: pointer;
+}
+.dropdown__content {
+  background-color: rgba(246, 246, 246, 0.4509803922);
+  padding: 20px;
+  border-radius: 5px;
+}
