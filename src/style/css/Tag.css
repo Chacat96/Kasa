@@ -1,0 +1,14 @@
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: white;
+  text-align: center;
+  padding: auto;
+  font-size: 14px;
+  gap: 10px;
+}
