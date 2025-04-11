@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
     .accueil {
         &__container {
             padding: 20px;
@@ -37,6 +37,7 @@
         
         &__annonce {
             grid-template-columns: repeat(1,1fr);
+            padding: 0;
         }
     }
     

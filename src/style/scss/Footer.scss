@@ -16,6 +16,15 @@
     &__copyright {
         color: white;
         text-align: center;
+        word-break: break-word;
+        white-space: normal;
     }
 }
 
+@media screen and (max-width: 1250px) {
+    .footer__copyright {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+    
+}

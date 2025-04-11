@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 115px;
+  width: 150px;
   height: 25px;
   border-radius: 10px;
   background-color: #FF6060;
@@ -11,4 +11,12 @@
   padding: auto;
   font-size: 14px;
   gap: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .tag {
+    width: 95px;
+    height: 20px;
+    font-size: 10px;
+  }
 }

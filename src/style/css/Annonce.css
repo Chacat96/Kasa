@@ -19,7 +19,7 @@
   margin: 20px 0;
 }
 .annonce__box__container-left .dropDownAnnonces {
-  width: 580px;
+  width: 600px;
 }
 .annonce__box__container-left > :last-child {
   margin-bottom: 0;
@@ -48,7 +48,7 @@
 .annonce__box__container-right__star {
   margin: 20px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .annonce__box__container-right__star img {
     width: 28px;
     height: 28px;
@@ -58,13 +58,13 @@
   margin-bottom: 0;
 }
 .annonce__box__container-right .dropDownAnnonces {
-  width: 580px;
+  width: 600px;
 }
 .annonce__box__container-right .dropDownAnnonces ul {
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .annonce__box {
     display: flex;
     flex-direction: column;

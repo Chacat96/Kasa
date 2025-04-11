@@ -1,10 +1,13 @@
 @import 'Variable';
 
+//Contenu de l'annonce en dessous du carrousel
 .annonce {
 
     &__box {
         display: flex;
         gap: 70px;
+
+//Partie gauche du container 
 
         &__container-left {
             display: flex;
@@ -25,14 +28,16 @@
             }
 
             .dropDownAnnonces {
-                width: 580px;
+                width: 600px;
             }
 
             > :last-child {
                 margin-bottom: 0;
             }
         }
-        
+  
+//Partie droit du container 
+
         &__container-right {
             display: flex;
             flex-direction: column;
@@ -58,7 +63,7 @@
 
             &__star {
                 margin: 20px 0;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 1250px) {
                     img {
                     width: 28px;
                     height: 28px; 
@@ -71,7 +76,7 @@
             }
 
             .dropDownAnnonces {
-                width: 580px;
+                width: 600px;
                 ul {
                     list-style: none;
                 }
@@ -80,7 +85,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
     .annonce {
         &__box {
             display: flex;

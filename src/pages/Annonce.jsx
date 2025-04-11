@@ -11,11 +11,12 @@ const Annonce = () => {
 
 const { id } = useParams(); 
 const annonce = data.find(item => item.id === id); 
-const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+const [isMobile, setIsMobile] = useState(window.innerWidth <= 1250);
 
+//Détect la taille de l'ecran
 useEffect(() => {
     const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768);
+        setIsMobile(window.innerWidth <= 1250);
     };
     window.addEventListener('resize', handleResize);
     return () => {
@@ -23,6 +24,13 @@ useEffect(() => {
     };
 }, []);
 
+//Redirige vers la page d'erreur en cas d'annonce introuvable
+if(!annonce) {
+    window.location.href = "/404";
+    return null;
+}
+
+//Rendu de l'annonce pour la version mobile
 if (isMobile) {
     return (
         <div className="annonce">
@@ -74,6 +82,7 @@ if (isMobile) {
 );  
 }
 
+//Rendu de l'annonce pour la version desktop
     return (
         <div className="annonce">
             <Carrousel img={annonce.pictures} /> 
@@ -120,7 +129,6 @@ if (isMobile) {
                 </div>
         </div>
     );
-
 };
 
 export default Annonce;
